@@ -6,7 +6,7 @@
   "scripts": {
     "start": "bun run src/index.ts",
     "build": "bun build --compile --minify --sourcemap --bytecode src/index.ts --outfile=dist/cli",
-    "validate": "bun run typecheck && bun run lint && bun run test",
+    "validate": "cross-env FORCE_COLOR=1 run-p --aggregate-output --print-label typecheck lint test",
     "typecheck": "tsc --noEmit",
     "lint": "biome check --write --diagnostic-level=error",
     "test": "bun test --pass-with-no-tests"
@@ -19,6 +19,8 @@
     "@biomejs/biome": "^2.3.10",
     "@types/bun": "latest",
     "@types/lodash": "^4.17.21",
+    "cross-env": "^10.1.0",
+    "npm-run-all2": "^8.0.4",
     "typescript": "^5.9.3"
   }
 }
