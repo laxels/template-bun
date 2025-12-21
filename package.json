@@ -5,11 +5,11 @@
   "private": true,
   "scripts": {
     "start": "bun run src/index.ts",
-    "build": "bun build --compile --minify --sourcemap --bytecode src/index.ts --outfile dist/cli",
-    "validate": "bun run test && bun run typecheck && bun run lint",
-    "test": "bun test --pass-with-no-tests",
+    "build": "bun build --compile --minify --sourcemap --bytecode src/index.ts --outfile=dist/cli",
+    "validate": "bun run typecheck && bun run lint && bun run test",
     "typecheck": "tsc --noEmit",
-    "lint": "biome check --write"
+    "lint": "biome check --write --diagnostic-level=error",
+    "test": "bun test --pass-with-no-tests"
   },
   "dependencies": {
     "@dotenvx/dotenvx": "^1.51.2",
