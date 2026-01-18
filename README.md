@@ -18,7 +18,16 @@ To run for production:
 bun run start
 ```
 
-## Setup
+## Template usage
+
+```bash
+rsync -av --progress \
+  --exclude='.git/' \
+  --exclude='node_modules/' \
+  template-bun/ project-dir/
+```
+
+## Project setup
 
 ### Generate encrypted .env using `dotenvx`
 
