@@ -25,7 +25,9 @@ bun run start
 To use encrypted secrets which can be checked in:
 
 ```bash
-echo "HELLO=World" > .env && dotenvx encrypt
+for file in .env.development.local .env.test.local .env.production.local .env.local .env.development .env.test .env.production .env; do
+  echo "HELLO=World" > "$file" && dotenvx encrypt -f "$file"
+done
 ```
 
 ### Add `node_modules/.bin/` to `$PATH`
