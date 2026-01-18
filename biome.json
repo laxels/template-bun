@@ -5,7 +5,23 @@
     "useIgnoreFile": true,
     "defaultBranch": "main"
   },
+  "linter": {
+    "rules": {
+      "style": {
+        "noNonNullAssertion": "off",
+        "useNodejsImportProtocol": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "off"
+      }
+    }
+  },
   "formatter": {
     "indentStyle": "space"
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
   }
 }
