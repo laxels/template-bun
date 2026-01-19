@@ -10,7 +10,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { App } from "./App";
 
-const convex = new ConvexReactClient(process.env.PUBLIC_CONVEX_URL!);
+const convex = new ConvexReactClient(process.env.BUN_PUBLIC_CONVEX_URL!);
 
 const elem = document.getElementById("root")!;
 const app = (
