@@ -1,4 +1,7 @@
 {
+  "files": {
+    "includes": ["**", "!**/_generated"]
+  },
   "vcs": {
     "enabled": true,
     "clientKind": "git",
