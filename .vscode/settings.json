@@ -10,7 +10,7 @@
 
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "typescript.preferences.importModuleSpecifierEnding": "minimal",
-  
+
   "typescript.updateImportsOnFileMove.enabled": "always",
   "markdown.updateLinksOnFileMove.enabled": "always"
 }

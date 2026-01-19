@@ -5,14 +5,19 @@
  * It is included in `src/index.html`.
  */
 
+import { ConvexProvider, ConvexReactClient } from "convex/react";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { App } from "./App";
 
+const convex = new ConvexReactClient(process.env.PUBLIC_CONVEX_URL!);
+
 const elem = document.getElementById("root")!;
 const app = (
   <StrictMode>
-    <App />
+    <ConvexProvider client={convex}>
+      <App />
+    </ConvexProvider>
   </StrictMode>
 );
 

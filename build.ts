@@ -138,6 +138,7 @@ const result = await Bun.build({
   define: {
     "process.env.NODE_ENV": JSON.stringify("production"),
   },
+  env: `PUBLIC_*`,
   ...cliConfig,
 });
 
