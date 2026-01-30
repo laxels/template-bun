@@ -24,6 +24,7 @@ bun run start
 rsync -av --progress \
   --exclude='.git/' \
   --exclude='node_modules/' \
+  --exclude='bun.lock' \
   template-bun/ project-dir/
 ```
 
