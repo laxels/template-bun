@@ -45,7 +45,8 @@ If the user points you to a source (files, URLs, etc.) and you cannot access it 
 - Use `== null` instead of falsy checks when checking if a value is nullish.
 - Prefer type aliases over interfaces unless necessary.
 - Use `Number(str)` instead of `parseInt(str)` or `parseFloat(str)`.
-- Prefer function declaration syntax (`function fn()`) over assignment (`const fn = ...`) unless using an arrow function is necessary.
+- Prefer function declaration syntax (`function fn()`) over assignment (`const fn = ...`) unless using an arrow function is necessary, like when annotating the whole function with a type.
+- Type React components using React's `FC` type. Note that this necessitates using an arrow function.
 - NEVER create barrel files.
 - Use `outdent` to format multi-line template strings.
 - Use the `http-status-codes` library instead of hardcoding HTTP status codes.
