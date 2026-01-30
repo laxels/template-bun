@@ -30,8 +30,9 @@
     "noPropertyAccessFromIndexSignature": false,
 
     "paths": {
-      "@/*": ["./src/*"], // Allow imports from '@/component' instead of 'src/component'
-      "@scripts/*": ["./scripts/*"] // Allow imports from '@scripts' instead of 'scripts/'
+      "@/*": ["./src/*"],
+      "@convex/*": ["./convex/*"],
+      "@scripts/*": ["./scripts/*"]
     }
   },
 
