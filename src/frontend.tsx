@@ -8,6 +8,7 @@
 import { ConvexProvider, ConvexReactClient } from "convex/react";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import { App } from "./App";
 
 const convex = new ConvexReactClient(process.env.BUN_PUBLIC_CONVEX_URL!);
@@ -15,9 +16,11 @@ const convex = new ConvexReactClient(process.env.BUN_PUBLIC_CONVEX_URL!);
 const elem = document.getElementById("root")!;
 const app = (
   <StrictMode>
-    <ConvexProvider client={convex}>
-      <App />
-    </ConvexProvider>
+    <BrowserRouter>
+      <ConvexProvider client={convex}>
+        <App />
+      </ConvexProvider>
+    </BrowserRouter>
   </StrictMode>
 );
 
