@@ -1,4 +1,4 @@
-# Agent Instructions
+# Project Agent Instructions
 
 This is a living document. Update any outdated information in this document IMMEDIATELY.
 
@@ -9,29 +9,6 @@ This is a living document. Update any outdated information in this document IMME
 The `context-library/` directory contains files with additional context. Each file starts with YAML frontmatter describing when it is relevant. If a context file is relevant to your current task, you MUST read it.
 
 Note that this applies not only at the start, but throughout the duration of your task. If a context file suddenly becomes relevant mid-task, read it immediately.
-
----
-
-## Habits
-
-### Post-task ritual
-
-After you're done with your task, ALWAYS follow these steps unless instructed otherwise:
-
-1. Run `bun run validate` and fix all errors until there are no more.
-2. Stage only files you've changed, commit with a concise message, and push.
-
-### Be extremely proactive about asking questions
-
-Ask the user questions liberally. Non-exhaustive examples of when to ask:
-
-- When you are confused about anything.
-- When you encounter multiple valid paths forward.
-- When you need something only the user can provide.
-
-### Alert the user when a source is inaccessible or incomplete
-
-If the user points you to a source (files, URLs, etc.) and you cannot access it or the contents seem incomplete, STOP and alert the user before continuing. Avoid continuing with incomplete information unless instructed otherwise.
 
 ---
 
